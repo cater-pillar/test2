@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alphabet Reflex Game</title>
+</head>
+<body>
+    <div class="container-difficulty">
+        <input type="radio" 
+               class='difficulty' 
+               name="difficulty" 
+               id="easy" 
+               value="5000" checked>
+        <label for='easy'>Easy</label>
+        <input type="radio" 
+               class='difficulty' 
+               name="difficulty" 
+               id="medium" 
+               value="3500">
+        <label for='medium'>Medium</label>
+        <input type="radio" 
+               class='difficulty' 
+               name="difficulty" 
+               id="hard" 
+               value="2000">
+        <label for='hard'>Hard</label>
+    </div>
+    <div class="btn-start">Start Game</div>
+    <div class="letter-value"></div>
+    <input type="text" 
+           name="input-letter" 
+           id="input-letter" 
+           placeholder="Input Letter"
+           disabled>
+    <div class="alphabet-container">
+        <div id="1">A</div>
+        <div id="2">B</div>
+        <div id="3">C</div>
+        <div id="4">D</div>
+        <div id="5">E</div>
+        <div id="6">F</div>
+        <div id="7">G</div>
+        <div id="8">H</div>
+        <div id="9">I</div>
+        <div id="10">J</div>
+        <div id="11">K</div>
+        <div id="12">L</div>
+        <div id="13">M</div>
+        <div id="14">N</div>
+        <div id="15">O</div>
+        <div id="16">P</div>
+        <div id="17">Q</div>
+        <div id="18">R</div>
+        <div id="19">S</div>
+        <div id="20">T</div>
+        <div id="21">U</div>
+        <div id="22">V</div>
+        <div id="23">W</div>
+        <div id="24">X</div>
+        <div id="25">Y</div>
+        <div id="26">Z</div>
+    </div>
+    <div class="score">
+        SCORE:
+        <div class="hit">
+            HIT: <span id="hit">0</span>
+        </div>
+        <div class="miss">
+            MISS: <span id="miss">0</span>
+        </div>
+        <div class="left">
+            LEFT: <span id="left">26</span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
